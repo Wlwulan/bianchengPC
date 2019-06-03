@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/works/works",
+    "pages/payV2/payV2",
+    "pages/payChoice/payChoice",
+    "pages/paySuccess/paySuccess",
+    "pages/creatClass/creatClass",
+    "pages/personal/personal",
+    "pages/editProduct/editProduct",
+    "pages/likeNotifications/likeNotifications",
+    "pages/myProduct/myProduct",
+    "pages/webView/webView",
+    "pages/history/history",
+    "pages/myFavor/myFavor",
+    "pages/authorize/authorize",
+    "pages/myWorks/myWorks",
+    "pages/protocol/protocol"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a5a5a5",
+    "selectedColor": "#5ca7ff",
+    "list": [
+      {
+        "pagePath": "pages/works/works",
+        "text": "作品集",
+        "iconPath": "static/images/tabBar_default1.png",
+        "selectedIconPath": "static/images/tabBar_selected1.png"
+      },
+      {
+        "pagePath": "pages/creatClass/creatClass",
+        "text": "创作课堂",
+        "iconPath": "static/images/tabBar_default2.png",
+        "selectedIconPath": "static/images/tabBar_selected2.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的创作",
+        "iconPath": "static/images/tabBar_default3.png",
+        "selectedIconPath": "static/images/tabBar_selected3.png"
+      }
+    ]
+  },
+  "onReachBottomDistance": 80
+}

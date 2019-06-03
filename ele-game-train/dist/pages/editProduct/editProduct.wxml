@@ -1,0 +1,24 @@
+<block>
+    <view>
+        <form class="editProduct" bindsubmit="reSure"><text class="title-1">我的作品</text>
+            <input name="workName" class="" value="{{productInfo.workName}}" /><text class="title-2">作品简介</text>
+            <view class="edit-con">
+                <textarea name="summary" class="{{transparent ? 'edit-ctn-transparent' : ''}}" value="{{productInfo.comment}}" placeholder-class="{{transparent ? 'edit-ctn-transparent' : ''}}"></textarea>
+            </view>
+            <view class="btn">
+                <button class="btn-cancel" bindtap="toggleModel">取消</button>
+                <button form-type="submit" class="btn-submit">确认</button>
+            </view>
+            <modal-container isShow="{{isShowModel}}" __triggerObserer="{{ _triggerObserer }}">
+                <modal-container-service bindonclosemodal="toggleModel" __triggerObserer="{{ _triggerObserer }}" top="{{-160}}" __fn_onCloseModal="{{true}}" data-e-onclosemodal-so="this">
+                    <view class="modal-tit">温馨提示</view>
+                    <view class="modal-con">作品名或作品简介内容已经修改，是否需要保存？</view>
+                    <view class="modal-btn2">
+                        <button class="modal-btn2-left" bindtap="cancel">取消</button>
+                        <button class="modal-btn2-right" form-type="submit">确认</button>
+                    </view>
+                </modal-container-service>
+            </modal-container>
+        </form>
+    </view>
+</block>

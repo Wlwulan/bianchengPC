@@ -1,0 +1,20 @@
+<block>
+    <view class="hotWork">
+        <slot></slot>
+        <view class="li" bindtap="toAuthorize" data-e-tap-so="this" data-e-tap-a-a="index" data-e-tap-a-b="{{workerId}}">
+            <image class="img" src="{{workImage}}"></image>
+            <view class="msg">
+                <view class="msg-top"><text class="txt">{{title}}</text><text class="time">{{time}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="msg-bottom" bindtap="toAuthorize" data-e-tap-so="this" data-e-tap-a-a="allworks" data-e-tap-a-b="{{userInfo.studentId}}">
+            <view class="msg-bottom-info">
+                <image class="avatar" src="{{userInfo['src']}}"></image><text class="name">{{userInfo['name']}}</text><text class="level">Lv.{{userInfo['level']}}</text>
+            </view>
+            <view class="msg-bottom-zan">
+                <image class="zan" src="https://appd.knowbox.cn/ss/miniapp/ele_game_register/like_red.png"></image><text class="num">{{likeNum}}</text>
+            </view>
+        </view>
+    </view>
+</block>

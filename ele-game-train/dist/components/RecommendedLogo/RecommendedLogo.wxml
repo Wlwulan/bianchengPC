@@ -1,0 +1,50 @@
+<block>
+    <view class="RecommendedLogo">
+        <view class="user-name" bindtap="toAuthorize" data-e-tap-so="this" data-e-tap-a-a="allworks" data-e-tap-a-b="{{userInfo.studentId}}">
+            <left-rigt-display __triggerObserer="{{ _triggerObserer }}">
+                <left-part slot="left" __triggerObserer="{{ _triggerObserer }}">
+                    <view class="img-warp">
+                        <block wx:if="{{userInfo.isPurchase === 1}}">
+                            <image class="title-frame" mode="widthFix" src="https://appd.knowbox.cn/ss/miniapp/ele_game_register/title-frame.png"></image>
+                        </block>
+                        <image class="avatar" mode="widthFix" src="{{userInfo.src}}"></image>
+                    </view>
+                </left-part>
+                <right-part paddingLeft="{{21}}" __triggerObserer="{{ _triggerObserer }}" slot="right">
+                    <view class="text-middle"><text class="name">{{userInfo.name}}</text><text class="level">Lv.{{userInfo.level}}</text>
+                    </view>
+                </right-part>
+            </left-rigt-display>
+        </view>
+        <view>
+            <block>
+                <block wx:if="{{playVideoIndex !== curNumber}}">
+                    <view class="video-mask">
+                        <image style="width: 750rpx;height: 563rpx;" src="{{poster}}"></image>
+                        <view class="mask">
+                            <view class="play-btn" bindtap="playCurrVideo" data-e-tap-so="this"></view>
+                        </view>
+                    </view>
+                </block>
+                <block wx:else>
+                    <video id="{{'video' + curNumber}}" style="width: 750rpx;height: 563rpx;" src="{{videoSrc}}" controls="{{true}}" show-center-play-btn="{{false}}" autoplay="{{true}}" bindplay="bindPlay" bindended="bindEnded" direction="{{direction}}" bindfullscreenchange="fullscreen" custom-cache="{{false}}"></video>
+                </block>
+            </block>
+        </view>
+        <view class="footer" bindtap="toAuthorize" data-e-tap-so="this" data-e-tap-a-a="index" data-e-tap-a-b="{{workerId}}">
+            <view class="like">
+                <left-rigt-display __triggerObserer="{{ _triggerObserer }}">
+                    <left-part slot="left" __triggerObserer="{{ _triggerObserer }}">
+                        <image style="width: 38rpx;height:38rpx;" mode="widthFix" src="https://appd.knowbox.cn/ss/miniapp/ele_game_register/like_red.png"></image>
+                    </left-part>
+                    <right-part paddingLeft="{{15}}" __triggerObserer="{{ _triggerObserer }}" slot="right">
+                        <view class="text-middle"><text class="number">{{likeNum}}</text>
+                        </view>
+                    </right-part>
+                </left-rigt-display>
+            </view>
+            <view class="title"><text>{{title}}</text>
+            </view>
+        </view>
+    </view>
+</block>

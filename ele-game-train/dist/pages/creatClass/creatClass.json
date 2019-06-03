@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "modal-container": "../../components/ModalContainers/ModalContainers",
+    "modal-container-service": "../../components/ModalContainerService/ModalContainerService"
+  },
+  "navigationBarTitleText": "创作课堂"
+}

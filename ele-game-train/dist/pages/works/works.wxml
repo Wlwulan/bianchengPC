@@ -1,0 +1,34 @@
+<block>
+    <view class="{{'index ' + (currentTab !== 0 && (favorNum > 0 ? 'index-space1' : 'index-space2'))}}">
+        <view class="{{' header ' + (currentTab !== 0 ? 'fixed' : '')}}">
+            <block wx:if="{{favorNum > 0}}">
+                <view class="favour-notice ">
+                    <view class="favour-notice-remind" bindtap="toMyFavor">
+                        <image src="{{avatar}}" __triggerObserer="{{ _triggerObserer }}"></image><text __triggerObserer="{{ _triggerObserer }}">新获得{{favorNum}}个赞</text>
+                        <view class="right"><text class="right-arrow1"></text><text class="right-arrow2"></text>
+                        </view>
+                    </view>
+                </view>
+            </block>
+            <tab-bar list="{{tabTitle}}" __triggerObserer="{{ _triggerObserer }}"></tab-bar>
+        </view>
+        <view style="{{'display: ' + (currentTab === 1 ? 'block' : 'none') + ' '}}">
+            <hot-works rankList="{{formatRankList}}" __triggerObserer="{{ _triggerObserer }}"></hot-works>
+        </view>
+        <view style="{{'display: ' + (currentTab === 2 ? 'block' : 'none') + ' '}}">
+            <new-works newList="{{formatNewList}}" __triggerObserer="{{ _triggerObserer }}"></new-works>
+        </view>
+        <view style="{{'display: ' + (currentTab === 3 ? 'block' : 'none') + ' '}}">
+            <topnotch-players goodList="{{goodList}}" __triggerObserer="{{ _triggerObserer }}"></topnotch-players>
+        </view>
+        <block>
+            <block wx:if="{{currentTab === 0}}">
+                <recommended-logos commandList="{{commandList}}" __triggerObserer="{{ _triggerObserer }}"></recommended-logos>
+            </block>
+        </block>
+        <view class="getMore">{{getMoreTxt}}</view>
+        <block wx:if="{{showPopup}}">
+            <popupwindow isCanvas="{{isCanvas}}" __triggerObserer="{{ _triggerObserer }}"></popupwindow>
+        </block>
+    </view>
+</block>

@@ -1,0 +1,11 @@
+<block>
+    <view class="newWorks">
+        <view class="index">
+            <block wx:if="{{newList}}">
+                <view class="hot-work" wx:key="i" wx:for="{{loopArray0}}" wx:for-item="el" wx:for-index="i">
+                    <hot-work userInfo="{{el.$loopState__temp2}}" __triggerObserer="{{ _triggerObserer }}" workImage="{{el.$original['workImage']}}" likeNum="{{el.$original['praiseCount']}}" time="{{el.$loopState__temp4}}" title="{{el.$original['workName']}}" workerId="{{el.$original['workId']}}"></hot-work>
+                </view>
+            </block>
+        </view>
+    </view>
+</block>

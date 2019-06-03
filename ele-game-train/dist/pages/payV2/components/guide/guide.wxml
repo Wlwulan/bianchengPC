@@ -1,0 +1,7 @@
+<block>
+    <view class="{{'guide-wrapper ' + (classname || '')}}">
+        <video class="video-guide" object-fit="contain" show-fullscreen-btn="{{false}}" src="https://appd.knowbox.cn/codebox/video/followUs.mp4"></video>
+        <view class="guide-list"><text>1.点击小程序右上角的 [...]</text><text>2.点击 [关于小象编程]</text><text>3.点击 [相关公众号]</text><text>4.点击 [小象编程训练营]</text><text>5.关注后，可以直接咨询老师</text>
+        </view>
+    </view>
+</block>

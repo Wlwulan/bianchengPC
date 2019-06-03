@@ -1,0 +1,5 @@
+<block>
+    <view class="flex">
+        <slot></slot>
+    </view>
+</block>

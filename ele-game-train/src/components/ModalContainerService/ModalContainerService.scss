@@ -1,0 +1,16 @@
+.modal-container {
+  position: relative;
+  width: 580rpx;
+  background-color: #FFFFFF;
+  border-radius: 27rpx;
+  border-color: transparent;
+  overflow: hidden;
+  padding-top: 80rpx;
+
+  &>image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 0 20rpx 20rpx; 
+  }
+}

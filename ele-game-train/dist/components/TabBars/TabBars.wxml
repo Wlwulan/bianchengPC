@@ -1,0 +1,6 @@
+<block>
+    <view>
+        <view class="tabBar"><text wx:key="index" class="{{'li ' + (currentId == index && 'active')}}" bindtap="handleIndex" wx:for="{{list}}" wx:for-item="el" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{index}}">{{el}}</text>
+        </view>
+    </view>
+</block>

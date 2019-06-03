@@ -1,0 +1,83 @@
+
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.modal-container {
+  width: 580rpx;
+  background-color: #fff;
+  border-radius: 30rpx;
+  text-align: center;
+  position: relative;
+}
+.modal-container.modal-pay {
+  height: 400rpx;
+}
+.modal-container.modal-guide {
+  width: 500rpx;
+  height: 710rpx;
+  padding: 0 40rpx;
+}
+.modal-container .modal-btn-close {
+  width: 62rpx;
+  height: 62rpx;
+  background: url(https://appd.knowbox.cn/ss/miniapp/ele_game_register/modal-close.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.title {
+  color: #56546c;
+  font-size: 40rpx;
+  font-weight: bold;
+  padding-top: 75rpx;
+}
+
+.input-cellphone {
+  width: 400rpx;
+  height: 68rpx;
+  border: 2rpx solid #dadada;
+  border-radius: 10rpx;
+  margin: 30rpx auto;
+  padding: 5rpx 15rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.btn-pay {
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #ff6716;
+  color: #fff;
+  font-size: 32rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.btn-pay::after {
+  border: none;
+}

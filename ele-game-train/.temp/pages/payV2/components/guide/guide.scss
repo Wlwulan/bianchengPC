@@ -1,0 +1,32 @@
+.guide-wrapper {
+    .video-guide {
+        width: 500rpx;
+        height: 289rpx;
+        margin-top: 40rpx;
+    }
+
+    .guide-list {
+        font-size: 24rpx;
+        color: #b6b6c1;
+        margin-bottom: 15rpx;
+        padding: 0 10rpx;
+        text-align: left;
+        Text {
+            display: block;
+        }
+    }
+
+    &.guide-wrapper--page {
+        text-align: center;
+        .video-guide {
+            width: 650rpx;
+            height: 374rpx;
+            margin: 0;
+        }
+        .guide-list {
+            width: 630rpx;
+            font-size: 32rpx;
+            margin: 0 auto;
+        }
+    }
+}

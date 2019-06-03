@@ -1,0 +1,130 @@
+$base_url: 'https://appd.knowbox.cn/ss/miniapp/ele_game_register';
+
+.content-wrapper {
+    padding-bottom: 150rpx;
+}
+
+.intro-image {
+    width: 100%;
+}
+
+.intro-video {
+    position: relative;
+    Video {
+        width: 640rpx;
+        height: 368rpx;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #intro_video {
+        top: 196rpx;
+    }
+    #intro_video2 {
+        top: 100rpx;
+    }
+    #intro_video3 {
+        top: 500rpx;
+    }
+    .gifimage-wrapper {
+        position: absolute;
+        top: 200rpx;
+        left: 50%;
+        transform: translateX(-50%);
+        .intro-image-gif {
+            display: block;
+            width: 640rpx;
+            margin: 0 auto;
+        }
+        .intro-image-gif1 {
+            margin-top: 50rpx;
+        }
+    }
+}
+
+.intro-course-info {
+    position: relative;
+    .course-info {
+        position: absolute;
+        left: 0;
+        bottom: 260rpx;
+        text-align: center;
+        width: 100%;
+        .course-info-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10rpx;
+        }
+        &--title {
+            display: block;
+            color: #000;
+            font-size: 36rpx;
+            margin-bottom: 5rpx;
+        }
+        &--description {
+            display: block;
+            color: #f00;
+            font-size: 24rpx;
+        }
+        &--name,
+        &--time {
+            width: 260rpx;
+            height: 70rpx;
+            line-height: 70rpx;
+            font-size: 36rpx;
+            color: #fff;
+            background-color: #f00;
+            display: block;
+        }
+        &--name {
+            border-top-left-radius: 50rpx;
+            border-bottom-left-radius: 50rpx;
+            margin-right: 1rpx;
+        }
+        &--time {
+            border-top-right-radius: 50rpx;
+            border-bottom-right-radius: 50rpx;
+            margin-left: 1rpx;
+        }
+    }
+}
+
+.bottom-bar {
+    width: 100%;
+    height: 120rpx;
+    background-color: #fff;
+    box-shadow: 0 -1rpx 3rpx 0 rgba(100, 100, 100, 0.2);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.btn-consult {
+    width: 49rpx;
+    height: 43rpx;
+    padding: 55rpx 35rpx 0;
+    background: url(#{$base_url}/consult.png) no-repeat center 10%;
+    background-size: 49rpx 43rpx;
+    font-size: 22rpx;
+    color: #949db6;
+    text-align: center;
+}
+
+.btn-pay {
+    width: 700rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    background-color: #ff6716;
+    color: #fff;
+    font-size: 32rpx;
+    border-radius: 45rpx;
+    border: none;
+    &::after {
+        border: none;
+    }
+    &--short {
+        width: 576rpx;
+    }
+}

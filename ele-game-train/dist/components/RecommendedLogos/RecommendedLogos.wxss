@@ -1,0 +1,53 @@
+
+.commend {
+  display: none;
+}
+
+.index {
+  background: #f3f6f9;
+}
+
+.user-name {
+  padding: 31rpx;
+  font-family: PingFangSC-Semibold;
+}
+.user-name .name {
+  font-size: 26rpx;
+  color: #727786;
+}
+.user-name .level {
+  padding-left: 15rpx;
+  font-size: 26rpx;
+  color: #f79904;
+  font-family: PingFangSC-Semibold;
+}
+
+.footer {
+  padding: 10rpx 29rpx;
+}
+.footer .like {
+  padding-bottom: 19rpx;
+}
+.footer .like .number {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #ff7575;
+}
+.footer .title {
+  font-family: PingFangSC-Semibold;
+  font-size: 32rpx;
+  line-height: 36rpx;
+  color: #333333;
+}
+
+.getMore {
+  text-align: center;
+  font-size: 28rpx;
+  color: #909090;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.active {
+  display: block;
+}

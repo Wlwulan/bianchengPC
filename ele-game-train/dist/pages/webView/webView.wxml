@@ -1,0 +1,3 @@
+<block>
+    <web-view src="{{src}}" bindmessage="handleMsg"></web-view>
+</block>

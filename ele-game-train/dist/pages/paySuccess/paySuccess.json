@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "left-rigt-display": "../../components/LeftRigtDisplay/LeftRigtDisplay",
+    "left-part": "../../components/LeftPart/LeftPart",
+    "right-part": "../../components/RightPart/RightPart"
+  },
+  "navigationBarTitleText": "小象编程"
+}

@@ -1,0 +1,172 @@
+.index { 
+  font-family: PingFangSC-Medium;
+
+  .registration_success {
+    text-align: center;
+    margin-bottom: 20rpx;
+
+    &>view {
+      display: inline-block;
+      position: relative;
+
+      image {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%)
+      }
+
+      text {
+        padding-left: 55rpx;
+        letter-spacing: 1rpx;
+	      color: #3a4054;
+      }
+    }
+  }
+
+  .describe {
+    text-align: center;
+    margin-bottom: 40rpx;
+
+    &>view {
+      font-family: PingFangSC-Medium;
+      display: inline-block;
+      color: #8b98be;
+      font-size: 30rpx;
+
+      &>.price {
+        padding-right: 40rpx;
+      }
+    }
+  }
+
+  .to-do {
+    text-align: center;
+    margin-bottom: 30rpx;
+
+    &>view {
+      display: inline-block;
+      position: relative;
+
+      &>text {
+        font-family: PingFangSC-Medium;
+        font-size: 40rpx;
+        color: #7ab2ff;
+      }
+
+      &>.left-image {
+        position: absolute;
+        left: -20rpx;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &>.right-image {
+        position: absolute;
+        right: -20rpx;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .circle {
+    position: relative;
+    display: inline-block;
+  
+    &>.left-circle {
+      position: absolute;
+      left: -20rpx;
+      top: 50%;
+      transform: translateY(-50%);
+      width:10rpx;
+      height:10rpx;
+      background-color:#dcdfe0;
+      border-radius:5rpx;
+    }
+  
+    &>.right-circle {
+      position: absolute;
+      right: -20rpx;
+      top: 50%;
+      transform: translateY(-50%);
+      width:10rpx;
+      height:10rpx;
+      background-color:#dcdfe0;
+      border-radius:5rpx;
+    }
+  }
+
+  .consult-video {
+    padding: 35rpx 85rpx 10rpx;
+  
+    video {
+      width: 478rpx;
+      height: 270rpx;
+    }
+  }
+
+  .ask-teacher {
+    padding: 0 15% 30rpx;
+    font-family: PingFangSC-Regular;
+  
+    &>view {
+      height: 40rpx;
+      .circle{
+        color: #9ea9cb;
+        font-size: 24rpx;
+      }
+    }
+  }
+
+  .section {
+    width: 40rpx;
+    height: 40rpx;
+    font-size: 26rpx;
+    color: #FFFFFF;
+    text-align: center;
+    background-size: cover;
+  }
+
+  .section-text {
+    padding-left: 25rpx;
+    font-family: PingFangSC-Medium;
+    font-size: 28rpx;
+    color: #575f73;
+  }
+
+  .charge-teacher {
+    text-align: center;
+    font-family: PingFangSC-Medium;
+    font-size: 36px;
+    color: #383e51;
+    margin: 20rpx 0 30rpx 0;
+  }
+
+  .copy {
+    text-align: center;
+    margin-bottom: 15rpx;
+
+    &>view {
+      display: inline-block;
+      width: 460rpx;
+      height: 88rpx;
+      line-height: 88rpx;
+      border-radius: 44rpx;
+      background-color: #7cb5ff;
+      box-sizing: border-box;
+      text-align: center;
+      font-family: PingFangSC-Medium;
+      font-size: 34rpx;
+      color: #ffffff;
+    }
+  }
+
+  .maybe{
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    letter-spacing: 1px;
+    color: #9ea9cb;
+  }
+}

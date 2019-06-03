@@ -1,0 +1,109 @@
+.RecommendedLogo {
+  margin-bottom: 20rpx;
+  background: #fff;
+  .user-name {
+    padding: 31rpx;
+    font-family: PingFangSC-Semibold;
+  
+    .name {
+      font-size: 26rpx;
+      color: #727786;
+    }
+  
+    .level {
+      padding-left: 15rpx;
+      font-size: 26px;
+      color: #f79904;
+    }
+    .img-warp {
+      position: relative;
+      width: 89rpx;
+      height: 85rpx;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .title-frame {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 89rpx;
+        height: 85rpx;
+      }
+      .avatar {
+        width: 73rpx;
+        height: 73rpx;
+        border-radius:73rpx; 
+        background-color: #e1e1e1;
+        border: solid 4rpx rgba(225, 225, 225, 0.4);
+      }
+    }
+
+  }
+  
+  .footer {
+    padding: 10rpx 29rpx;
+  
+    .like {
+      padding-bottom: 50rpx;
+      
+      .number {
+        font-family: PingFangSC-Regular;
+        font-size: 28rpx;
+        height: 28rpx;
+        line-height: 28rpx;
+        color: #ff7575;
+        font-weight:bold;
+        padding-top: 10rpx;
+      }
+    }
+  
+    .title {
+      height: 32rpx;
+      font-size: 32rpx;
+      line-height: 32rpx;
+      color: #333333;
+      font-family: PingFangSC-Semibold;
+      padding-bottom: 33rpx;
+    }
+  }
+  .text-middle {
+    display: flex;
+    align-items: flex-end;
+  }
+  .video-mask {
+    position: relative;
+    width: 750rpx;height: 563rpx;
+    .mask {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.4);
+      .play-btn {
+        width: 100rpx;
+        height: 100rpx;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        border-radius: 100rpx;
+        background: rgba(225, 225, 225,0.8);
+        &:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          width:0;
+          height:0;
+          border-width:26rpx 45rpx 26rpx 45rpx;
+          border-style:solid;
+          border-color:transparent transparent transparent rgba(0, 0, 0, 0.8);
+          margin-left: 28rpx;
+        }        
+      }
+
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.history {
+    .browseTime {
+        width: 716rpx;
+        height: 84rpx;
+        margin: -24rpx auto 0;
+        background:#fff; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .line {
+            width: 100%;
+            height: 1rpx;
+            background-color: #ebebeb;
+        }
+        .time {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            padding: 0 22rpx;
+            font-size: 22rpx;
+            color: #a5a5a5;
+            background:#fff;
+        }
+    }
+}
+.look-early {
+    text-align: center;
+    padding: 26rpx;
+  
+    &>text {
+      font-family: PingFangSC-Regular;
+      font-size: 28rpx;
+      color: #909090;
+    } 
+}
+.nothing {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+
+}

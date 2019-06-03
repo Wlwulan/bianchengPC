@@ -1,0 +1,261 @@
+
+.personal .header {
+  width: 100%;
+  height: 380rpx;
+  background: url("https://appd.knowbox.cn/ss/miniapp/ele_game_register/personal_bg.png") no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 20rpx solid #f3f6f9;
+}
+.personal .header .header-left {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.personal .header .header-left .title-frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 182rpx;
+  height: 174rpx;
+}
+.personal .header .header-left .profile-picture {
+  width: 140rpx;
+  height: 140rpx;
+  background-color: #293889;
+  border: solid 4rpx #ffffff;
+  margin: 0 59rpx;
+  border-radius: 140rpx;
+}
+.personal .header .header-right {
+  height: 100%;
+}
+.personal .header .header-right .msg-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 126rpx 0 49rpx;
+}
+.personal .header .header-right .msg-top .nick-name {
+  display: inline-block;
+  font-size: 34rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin-right: 47rpx;
+  width: 202rpx;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.personal .header .header-right .msg-top .isbuy {
+  display: inline-block;
+  position: absolute;
+  right: 47rpx;
+  height: 56rpx;
+  background-color: #fdb500;
+  border-radius: 28rpx;
+  font-size: 24rpx;
+  color: #ffffff;
+  line-height: 56rpx;
+  text-align: center;
+  padding: 0 27rpx;
+}
+.personal .header .header-right .msg-bottom {
+  width: 484rpx;
+  height: 148rpx;
+  border-top: 1rpx solid #fff;
+}
+.personal .header .header-right .msg-bottom .progress-warp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 32rpx;
+}
+.personal .header .header-right .msg-bottom .progress-warp .progress {
+  width: 360rpx;
+  height: 20rpx;
+  background-color: #293889;
+  border-radius: 10rpx;
+  position: relative;
+  margin-right: 43rpx;
+}
+.personal .header .header-right .msg-bottom .progress-warp .progress .progress-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0rpx;
+  height: 20rpx;
+  background-color: #95ff4f;
+  border-radius: 10rpx;
+}
+.personal .header .header-right .msg-bottom .progress-warp .tips-warp {
+  width: 60rpx;
+  height: 60rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.personal .header .header-right .msg-bottom .progress-warp .tips-warp .tips {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 30rpx;
+  background: url("https://appd.knowbox.cn/ss/miniapp/ele_game_register/personal/explain-btn.png") no-repeat;
+  background-size: cover;
+}
+.personal .header .header-right .msg-bottom .progress-txt {
+  font-size: 24rpx;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 360rpx;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.personal .header .header-right .msg-bottom .progress-txt .level {
+  font-family: PingFangSC-Semibold;
+}
+.personal .myList .li {
+  width: 100%;
+  height: 104rpx;
+  border-bottom: 1rpx solid #ebebeb;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.personal .myList .li .img-warp {
+  width: 119rpx;
+  height: 44rpx;
+}
+.personal .myList .li .img-warp .img {
+  margin-left: 51rpx;
+  width: 42rpx;
+  height: 44rpx;
+}
+.personal .myList .li .txt {
+  font-size: 32rpx;
+  color: #333333;
+}
+.personal .myList .li .arrow {
+  display: inline-block;
+  float: right;
+  width: 18rpx;
+  height: 18rpx;
+  border-top: 4rpx solid #629dda;
+  border-right: 4rpx solid #629dda;
+  position: absolute;
+  right: 50rpx;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.personal .toastTxt {
+  width: 100%;
+  padding: 0 64rpx 83rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 28rpx;
+  color: #9796a4;
+  text-align: center;
+  line-height: 44rpx;
+}
+.personal .toastTxt Text {
+  color: #ff7575;
+  margin-right: 12rpx;
+}
+.personal .score {
+  text-align: left;
+}
+.personal .title {
+  font-size: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #56546c;
+  margin-bottom: 43rpx;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+.personal .footerBtn {
+  width: 100%;
+  height: 101rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 32rpx;
+  border-top: 2rpx solid #e4ebf0;
+}
+.personal .footerBtn .cancel {
+  width: 50%;
+  background-color: #fff;
+  line-height: 101rpx;
+  color: #9796a4;
+}
+.personal .footerBtn .toPay {
+  width: 50%;
+  background-color: #85cdfb;
+  color: #ffffff;
+  line-height: 101rpx;
+}
+.personal .footerBtn .close {
+  width: 100%;
+  background-color: #85cdfb;
+  color: #ffffff;
+  line-height: 101rpx;
+}
+.personal .footerBtn Button {
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+.personal .footerBtn Button::after {
+  border: none;
+}

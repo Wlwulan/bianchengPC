@@ -1,0 +1,131 @@
+
+.wrapper {
+  padding: 50rpx 36rpx 0;
+}
+
+.choice-content {
+  margin-bottom: 60rpx;
+}
+
+.title {
+  font-size: 34rpx;
+  color: #575f73;
+  margin-bottom: 25rpx;
+}
+
+.choice-item {
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #fff;
+  color: #99a4c4;
+  font-size: 30rpx;
+  border: 2rpx solid #cad3e6;
+  border-radius: 10rpx;
+  text-align: center;
+}
+.choice-item.choice-item--active {
+  background-color: #7cb5ff;
+  color: #fff;
+}
+.choice-item.choice-item--disabled {
+  background-color: #ecf1fa;
+  border-color: #e4e9f4;
+  color: #cad3e6;
+}
+.choice-item.choice-item--class {
+  width: 248rpx;
+  margin-right: 40rpx;
+  display: inline-block;
+}
+.choice-item.choice-item--time {
+  margin-bottom: 27rpx;
+}
+
+.input-cellphone {
+  font-size: 30rpx;
+  height: 76rpx;
+  padding: 5rpx 15rpx;
+  border-radius: 10rpx;
+  border: 2rpx solid #cad3e6;
+}
+
+.input-cellphone--placeholder {
+  color: #cad3e6;
+}
+
+.pay-btn {
+  height: 110rpx;
+  line-height: 110rpx;
+  background-color: #7cb5ff;
+  color: #fff;
+  font-size: 34rpx;
+  width: 100%;
+  border-radius: 0;
+}
+.pay-btn::after {
+  border: none;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer .checkbox-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 26rpx;
+}
+.footer .checkbox-wrap .checkbox-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .checkbox-wrap .checkbox-group label {
+  font-size: 26rpx;
+  color: #cad3e6;
+}
+.footer .checkbox-wrap .checkbox-group label checkbox .wx-checkbox-input {
+  width: 26rpx;
+  height: 26rpx;
+  border-radius: 26rpx;
+}
+.footer .checkbox-wrap .checkbox-group label checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  width: 26rpx;
+  height: 26rpx;
+}
+.footer .checkbox-wrap .checkbox-group label checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 26rpx;
+  height: 26rpx;
+  line-height: 26rpx;
+  text-align: center;
+  font-size: 20rpx;
+  color: #7cb5ff;
+  background: transparent;
+  -ms-transform: translate(-50%, -50%) scale(1);
+      transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+.footer Text {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  font-size: 26rpx;
+  color: #cad3e6;
+  margin-top: 8rpx;
+}
+.footer .toProtocol {
+  border-bottom: 1rpx solid #cad3e6;
+}

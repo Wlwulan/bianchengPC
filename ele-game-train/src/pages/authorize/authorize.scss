@@ -1,0 +1,79 @@
+.authorize-warp {
+    width: 100%;
+    height: 100%;
+    background-color:rgba($color: #000000, $alpha:0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    .authorize {
+        width: 580rpx;
+        height: 540rpx;
+        background-color: #ffffff;
+        border-radius: 20rpx;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .title {
+            font-size: 32rpx;
+            color: #56546c;
+            margin-bottom: 48rpx;
+            text-align: center;
+        } 
+        .ctn-warp{
+            display: flex;
+            justify-content: left;
+            margin-bottom: 44rpx;      
+            &-img {
+                margin-left: 90rpx;
+                margin-right: 35rpx;
+                Image {
+                    width: 72rpx;
+                    height: 76rpx;
+                }
+            }
+            &-txt {
+                display: flex;
+                flex-direction: column;
+                Text:nth-child(1) {
+                    font-size: 36rpx;
+                    color: #404048;
+                }
+                Text:nth-child(2) {
+                    font-size: 26rpx;
+                    color: #9796a4;
+                    opacity: 0.8;
+                }
+            }
+        }
+        &-btn {
+            width: 494rpx;
+            height: 80rpx;
+            line-height: 80rpx;
+            background-color: #36b532;
+            border-radius: 6rpx;
+            font-size: 26rpx;
+            color: #ffffff;
+            margin-bottom: 20rpx;
+        }
+        .agree {
+            display: flex;
+            justify-content: center;
+            &-icon{
+                width: 22rpx;
+                height: 22rpx;
+                border-radius: 22rpx;
+                background-color: #36b532;
+                margin-right: 12rpx;
+            }
+            &-txt {
+                font-size: 20rpx;
+                color: #c1c1c1;
+            }
+        }
+    }
+}

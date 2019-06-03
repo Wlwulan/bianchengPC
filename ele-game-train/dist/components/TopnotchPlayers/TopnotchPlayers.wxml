@@ -1,0 +1,18 @@
+<block>
+    <view class="TopnotchPlayers">
+        <view wx:key="i" class="li" bindtap="toAuthorize" wx:for="{{goodList}}" wx:for-item="el" wx:for-index="i" data-e-tap-so="this" data-e-tap-a-a="allworks" data-e-tap-a-b="{{el['StudentId']}}">
+            <view class="img-warp">
+                <block wx:if="{{el['isPurchase'] === 1}}">
+                    <image class="title-frame" mode="widthFix" src="https://appd.knowbox.cn/ss/miniapp/ele_game_register/title-frame.png"></image>
+                </block>
+                <image class="img" src="{{el['HeadPhoto']}}"></image>
+            </view>
+            <view class="msg">
+                <view class="msg-top"><text class="txt">{{el['StudentName']}}</text><text class="time">Lv.{{el['AbilityLevel']}}</text>
+                </view>
+                <view class="msg-bottom"><text class="time">总获赞量：{{el['PraiseCount']}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

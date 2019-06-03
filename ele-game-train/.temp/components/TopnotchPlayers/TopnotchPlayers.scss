@@ -1,0 +1,83 @@
+.TopnotchPlayers {
+    .li {
+        width: 100%;
+        height: 183rpx;
+        border-bottom: 1px solid #ebebeb;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        .img-warp {
+            position: relative;
+            width: 120rpx;
+            height: 115rpx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 53rpx;
+            margin-right: 45rpx;
+            .title-frame {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 120rpx;
+                height: 115rpx;
+              }
+            .img {
+                width: 100rpx;
+                height: 100rpx;
+                border-radius: 100rpx;
+                background-color: #4455b3;
+                border: solid 4px rgba(225, 225, 225, 0.4);
+            }            
+        }
+        .msg {
+            height: 73rpx;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .msg-top {
+                display: flex;
+                align-items: flex-end;
+                .txt {
+                    font-size: 30rpx;
+                    line-height: 30rpx;
+                    color: #727786;
+                    margin-right: 22rpx;
+                }
+                .time {
+                    font-size: 24rpx;
+                    line-height: 24rpx;
+                    height: 24rpx;
+                    color: #f79904;
+                }
+            }
+            .msg-bottom {
+                height: 27rpx;
+                display: flex;
+                align-items: flex-end;
+                .zan {
+                    width: 28rpx;
+                    height: 27rpx;
+                    margin-right: 6rpx;
+                }
+                .time {
+                    font-size: 22rpx;
+                    line-height: 22rpx;
+                    height: 20rpx;
+                    color: #b4b4b4;
+                }
+            }
+        }
+    }
+    .getMore {
+        text-align: center;
+        font-size: 28rpx;
+        color: #909090;
+        height: 80rpx;
+        line-height: 80rpx;
+    }
+    
+}
+.active {
+    display: block;
+}

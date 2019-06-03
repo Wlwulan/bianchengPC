@@ -1,0 +1,111 @@
+
+.authorize-warp {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.authorize-warp .authorize {
+  width: 580rpx;
+  height: 540rpx;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.authorize-warp .authorize .title {
+  font-size: 32rpx;
+  color: #56546c;
+  margin-bottom: 48rpx;
+  text-align: center;
+}
+.authorize-warp .authorize .ctn-warp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-bottom: 44rpx;
+}
+.authorize-warp .authorize .ctn-warp-img {
+  margin-left: 90rpx;
+  margin-right: 35rpx;
+}
+.authorize-warp .authorize .ctn-warp-img Image {
+  width: 72rpx;
+  height: 76rpx;
+}
+.authorize-warp .authorize .ctn-warp-txt {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.authorize-warp .authorize .ctn-warp-txt Text:nth-child(1) {
+  font-size: 36rpx;
+  color: #404048;
+}
+.authorize-warp .authorize .ctn-warp-txt Text:nth-child(2) {
+  font-size: 26rpx;
+  color: #9796a4;
+  opacity: 0.8;
+}
+.authorize-warp .authorize-btn {
+  width: 494rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #36b532;
+  border-radius: 6rpx;
+  font-size: 26rpx;
+  color: #ffffff;
+  margin-bottom: 20rpx;
+}
+.authorize-warp .authorize .agree {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.authorize-warp .authorize .agree-icon {
+  width: 22rpx;
+  height: 22rpx;
+  border-radius: 22rpx;
+  background-color: #36b532;
+  margin-right: 12rpx;
+}
+.authorize-warp .authorize .agree-txt {
+  font-size: 20rpx;
+  color: #c1c1c1;
+}

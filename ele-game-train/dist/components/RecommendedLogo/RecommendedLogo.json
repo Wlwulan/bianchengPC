@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "left-rigt-display": "../LeftRigtDisplay/LeftRigtDisplay",
+    "left-part": "../LeftPart/LeftPart",
+    "right-part": "../RightPart/RightPart"
+  }
+}

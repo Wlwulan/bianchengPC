@@ -1,0 +1,37 @@
+<block>
+    <view class="wrapper">
+        <view class="choice-content">
+            <view class="title"><text>1.选择班级类型</text>
+            </view>
+            <view>
+                <view class="{{'choice-item choice-item--class ' + (item.GroupId === activeClassId ? 'choice-item--active' : '')}}" data-id="{{item.GroupId}}" data-time-id="{{item.PhaseList[0].Phaseid}}" wx:key="GroupId" bindtap="handleClassSelected" wx:for="{{productListData}}" wx:for-item="item" wx:for-index="_anonIdx"><text>{{item.GroupName}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="choice-content">
+            <view class="title"><text>2.选择上课时间</text>
+            </view>
+            <view>
+                <view class="{{'choice-item choice-item--time ' + (item.$original.Phaseid === activeTimeId ? 'choice-item--active' : '')}}" data-id="{{item.$original.Phaseid}}" wx:key="$original.Phaseid" bindtap="handleTimeSelected" wx:for="{{loopArray0}}" wx:for-item="item" wx:for-index="_anonIdx2"><text space="emsp" decode="{{true}}">{{item.$original.Phasename}}·{{item.$loopState__temp2}}开课·{{item.$original.Summary}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="choice-content">
+            <view class="title"><text>3.填写家长手机号</text>
+            </view>
+            <view>
+                <input type="number" maxlength="11" class="input-cellphone" placeholder-class="input-cellphone--placeholder" placeholder="手机号仅用于开通课程，无电话销售" value="{{cellphone}}" bindinput="handleCellPhoneInput" />
+            </view>
+        </view>
+        <view class="footer">
+            <view class="checkbox-wrap">
+                <checkbox-group class="checkbox-group" bindchange="handleCheckboxChange">
+                    <label>
+                        <checkbox value="protocol" checked="{{true}}"></checkbox>
+                    </label>
+                </checkbox-group><text>购买前我已阅读:</text><text class="toProtocol" bindtap="toProtocol">《用户需知和守候服务条款》</text>
+            </view>
+            <button class="pay-btn" disabled="{{!(isCellphoneValid && isCheckedProtocol)}}" bindtap="handleDoPay">立即支付</button>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,234 @@
+
+.myProduct .li {
+  width: 718rpx;
+  height: 276rpx;
+  border-bottom: 1rpx solid #ebebeb;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.myProduct .li .under-load, .myProduct .li .on-load {
+  position: absolute;
+  top: 25rpx;
+  left: 10rpx;
+  width: 46rpx;
+  height: 42rpx;
+}
+.myProduct .li .under-load {
+  background: url("https://appd.knowbox.cn/ss/miniapp/ele_game_register/myProduct/under-load.png") 0 0 no-repeat;
+  background-size: 100%;
+}
+.myProduct .li .on-load {
+  background: url("https://appd.knowbox.cn/ss/miniapp/ele_game_register/myProduct/on-load.png") 0 0 no-repeat;
+  background-size: 100%;
+}
+.myProduct .li .img {
+  width: 267rpx;
+  height: 200rpx;
+  background-color: #5ca7ff;
+  border-radius: 8rpx;
+  border: solid 2rpx #ebebeb;
+  margin-left: 18rpx;
+  margin-right: 24rpx;
+}
+.myProduct .li .msg {
+  height: 200rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.myProduct .li .msg .msg-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.myProduct .li .msg .msg-top .txt {
+  font-size: 30rpx;
+  line-height: 30rpx;
+  color: #333333;
+  margin-bottom: 16rpx;
+}
+.myProduct .li .msg .msg-top .time {
+  font-size: 20rpx;
+  line-height: 20rpx;
+  color: #b4b4b4;
+}
+.myProduct .li .msg .msg-bottom {
+  height: 27rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.myProduct .li .msg .msg-bottom .zan {
+  width: 28rpx;
+  height: 27rpx;
+  margin-right: 6rpx;
+}
+.myProduct .li .msg .msg-bottom .time {
+  font-size: 20rpx;
+  line-height: 20rpx;
+  height: 20rpx;
+  color: #ff8585;
+}
+.myProduct .getMore {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #909090;
+}
+.myProduct .nothing {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.editToast {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+.editToast .blank {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+.editToast .select {
+  width: 100%;
+  height: 483rpx;
+  background: #ffffff;
+  position: fixed;
+  bottom: 114rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40rpx 10rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.editToast .select .menuList {
+  width: 150rpx;
+  height: 114rpx;
+  font-size: 24rpx;
+  color: #56546c;
+  text-align: center;
+  margin: 40rpx 40rpx 40rpx 40rpx;
+}
+.editToast .select .menuList .img {
+  width: 60rpx;
+  height: 60rpx;
+}
+.editToast .select .menuList text {
+  display: block;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.editToast .select .menuList .published {
+  color: #bbbbc4;
+}
+.editToast .cancel {
+  width: 100%;
+  height: 114rpx;
+  line-height: 114rpx;
+  text-align: center;
+  font-size: 34rpx;
+  background: #85cdfb;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+}
+
+.modal-tit {
+  text-align: center;
+  font-family: PingFangSC-Semibold;
+  color: #56546c;
+  font-size: 40rpx;
+  height: 130rpx;
+  line-height: 130rpx;
+}
+
+.modal-con {
+  padding: 0 30rpx;
+  color: #9796a4;
+  font-size: 28rpx;
+  text-align: center;
+  height: 100rpx;
+}
+
+.modal-btn {
+  height: 101rpx;
+  line-height: 101rpx;
+  color: #ffffff;
+  text-align: center;
+  background: #85cdfb;
+  font-size: 32rpx;
+}
+
+.modal-btn2 {
+  margin-top: 40rpx;
+  text-align: center;
+  height: 101rpx;
+  line-height: 101rpx;
+  background: #ffffff;
+  font-size: 32rpx;
+}
+.modal-btn2 .modal-btn2-left, .modal-btn2 .modal-btn2-right {
+  width: 50%;
+  float: left;
+  height: 101rpx;
+  border-radius: 0;
+}
+.modal-btn2 .modal-btn2-left::after, .modal-btn2 .modal-btn2-right::after {
+  border: none;
+}
+.modal-btn2 .modal-btn2-left {
+  color: #9796a4;
+  border-top: 1rpx solid #e4ebf0;
+}
+.modal-btn2 .modal-btn2-right {
+  color: #ffffff;
+  background: #85cdfb;
+  border-top: 1rpx solid #85cdfb;
+}

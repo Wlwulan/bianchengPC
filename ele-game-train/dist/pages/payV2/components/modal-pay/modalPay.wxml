@@ -1,0 +1,10 @@
+<block>
+    <view class="modal-wrapper">
+        <view class="modal-container modal-pay">
+            <view class="modal-btn-close" bindtap="closeModal"></view>
+            <view class="title">家长手机号</view>
+            <input class="input-cellphone" type="number" placeholder="请输入家长的手机号" value="{{cellphone}}" bindinput="handleCellPhoneInput" />
+            <button class="btn-pay" disabled="{{!isCellphoneValid}}" bindtap="handleDoPay">立即支付</button>
+        </view>
+    </view>
+</block>

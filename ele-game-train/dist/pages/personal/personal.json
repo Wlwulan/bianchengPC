@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "modal-container": "../../components/ModalContainers/ModalContainers",
+    "modal-container-service": "../../components/ModalContainerService/ModalContainerService",
+    "authorize": "../../components/authorize/authorize"
+  },
+  "navigationBarTitleText": "我的"
+}

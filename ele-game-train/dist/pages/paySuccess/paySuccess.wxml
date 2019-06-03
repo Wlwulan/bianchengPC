@@ -1,0 +1,56 @@
+<block>
+    <view class="index">
+        <view class="registration_success">
+            <view>
+                <image src="https://appd.knowbox.cn/ss/miniapp/ele_game_register/right.png" mode="widthFix" style="width: 40rpx;"></image><text>报名成功</text>
+            </view>
+        </view>
+        <view class="describe">
+            <view><text class="price">价格：¥98</text><text>{{courseName}}{{courseTime}}开课</text>
+            </view>
+        </view>
+        <view style="padding: 0 40rpx;">
+            <view style="height: 2px; background-color: #e9eef6;"></view>
+            <view style="padding: 40rpx 10rpx;">
+                <view class="to-do">
+                    <view>
+                        <image class="left-image" src="https://appd.knowbox.cn/ss/miniapp/ele_game_register/blue.png" mode="widthFix" style="width: 16rpx;"></image><text>【您需要先完成两件事】</text>
+                        <image class="right-image" src="https://appd.knowbox.cn/ss/miniapp/ele_game_register/blue.png" mode="widthFix" style="width: 16rpx;"></image>
+                    </view>
+                </view>
+                <view>
+                    <left-rigt-display __triggerObserer="{{ _triggerObserer }}">
+                        <left-part slot="left" __triggerObserer="{{ _triggerObserer }}">
+                            <view class="section" style="background-image: url('https://appd.knowbox.cn/ss/miniapp/ele_game_register/orange.png')">1</view>
+                        </left-part>
+                        <right-part slot="right" __triggerObserer="{{ _triggerObserer }}"><text class="section-text">关注公众号【小象编程训练营】</text>
+                        </right-part>
+                    </left-rigt-display>
+                </view>
+                <view class="consult-video">
+                    <video poster="{{globalData.videoBg}}" src="https://appd.knowbox.cn/codebox/video/followUs.mp4" show-fullscreen-btn="{{false}}" autoplay="{{true}}" loop="{{true}}" object-fit="fill"></video>
+                </view>
+                <view class="ask-teacher">
+                    <view wx:key="i" wx:for="{{askTeacher}}" wx:for-item="text" wx:for-index="i">
+                        <view class="circle"><text class="left-circle"></text><text>{{text}}</text>
+                        </view>
+                    </view>
+                </view>
+                <view>
+                    <left-rigt-display __triggerObserer="{{ _triggerObserer }}">
+                        <left-part slot="left" __triggerObserer="{{ _triggerObserer }}">
+                            <view class="section" style="background-image: url('https://appd.knowbox.cn/ss/miniapp/ele_game_register/orange.png')">2</view>
+                        </left-part>
+                        <right-part slot="right" __triggerObserer="{{ _triggerObserer }}"><text class="section-text">复制并搜索添加班主任微信，方可上课</text>
+                        </right-part>
+                    </left-rigt-display>
+                </view>
+                <view class="charge-teacher">{{'[ 您的班主任微信：' + teacherMobile + ' ]'}}</view>
+                <view class="copy">
+                    <view bindtap="copyText">复制班主任微信</view>
+                </view>
+                <view class="maybe">因微信限制老师可能会延迟1-2天响应</view>
+            </view>
+        </view>
+    </view>
+</block>

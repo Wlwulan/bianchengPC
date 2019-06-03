@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "hot-work": "../../components/HotWork/HotWork"
+  },
+  "navigationBarTitleText": "我的喜欢"
+}

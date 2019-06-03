@@ -1,0 +1,107 @@
+
+@charset "UTF-8";
+.index-space1 {
+  margin-top: 220rpx;
+}
+.index-space2 {
+  margin-top: 92rpx;
+}
+.index .header {
+  width: 100%;
+}
+.index .favour-notice {
+  z-index: 9;
+  width: 750rpx;
+  height: 128rpx;
+  background-color: #f3f6f9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.index .favour-notice-remind {
+  width: 298rpx;
+  height: 76rpx;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.index .favour-notice-remind image {
+  width: 55rpx;
+  height: 55rpx;
+  background-color: #f3f6f9;
+  margin-left: 9rpx;
+  margin-right: 19rpx;
+}
+.index .favour-notice-remind text {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 36rpx;
+  letter-spacing: 0;
+  color: #333333;
+}
+.index .favour-notice-remind .right {
+  width: 20rpx;
+  height: 20rpx;
+  position: absolute;
+  right: 40rpx;
+  top: 28rpx;
+}
+.index .favour-notice-remind .right-arrow1, .index .favour-notice-remind .right-arrow2 {
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-top: 10rpx transparent dashed;
+  border-right: 10rpx transparent dashed;
+  border-bottom: 10rpx transparent dashed;
+  border-left: 10rpx white solid;
+  overflow: hidden;
+}
+.index .favour-notice-remind .right-arrow1 {
+  left: 1rpx;
+  /*重要*/
+  border-left: 10rpx #333333 solid;
+}
+.index .favour-notice-remind .right-arrow2 {
+  border-left: 10rpx white solid;
+}
+.index .getMore {
+  text-align: center;
+  font-size: 28rpx;
+  color: #909090;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.index .fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.hideFavor {
+  top: 0rpx;
+}

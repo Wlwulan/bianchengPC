@@ -1,0 +1,61 @@
+<block>
+    <view class="wrapper">
+        <block wx:if="{{isModalPayShow}}">
+            <modal-pay gdt_vid="{{gdt_vid}}" __triggerObserer="{{ _triggerObserer }}" adId="{{adId}}"></modal-pay>
+        </block>
+        <block wx:if="{{isModalGuideShow}}">
+            <modal-guide title="{{modalTitle}}" __triggerObserer="{{ _triggerObserer }}"></modal-guide>
+        </block>
+        <view class="content-wrapper">
+            <view wx:key="$original" bindtap="handlChangeImgIndex2" class="{{index.$original === 0 ? 'intro-course-info' : index.$original === 3 || index.$original === 7 || index.$original === 8 ? 'intro-video' : ''}}" wx:for="{{loopArray0}}" wx:for-item="index" wx:for-index="_anonIdx" data-e-tap-so="this" data-e-tap-a-a="{{index.$original}}">
+                <block wx:if="{{index.$original === 100}}">
+                    <view class="course-info">
+                        <block wx:if="{{isMulti}}"><text class="course-info--title">{{coursePeriod}}开放报名，多期可选</text>
+                        </block>
+                        <block wx:if="{{!isMulti}}">
+                            <view class="course-info-wrapper"><text class="course-info--name">{{courseName}}</text><text class="course-info--time">{{courseTime}}开课</text>
+                            </view>
+                        </block><text class="course-info--description">作业盒子旗下编程课</text>
+                    </view>
+                </block>
+                <block wx:if="{{index.$original === 2}}">
+                    <image class="intro-image" src="{{WEB_API.buyImageUrl + '13.png'}}" style="{{index.$loopState__temp2}}" mode="widthFix"></image>
+                </block>
+                <block wx:if="{{index.$original === 3}}">
+                    <video id="intro_video" src="{{WEB_API.buyVideoUrl + 'course_video_01.mp4'}}"></video>
+                </block>
+                <block wx:if="{{index.$original === 7}}">
+                    <view>
+                        <video id="intro_video2" src="{{WEB_API.buyVideoUrl + 'course_video_02.mp4'}}"></video>
+                        <video id="intro_video3" src="{{WEB_API.buyVideoUrl + 'course_video_03.mp4'}}"></video>
+                    </view>
+                </block>
+                <block wx:if="{{index.$original === 8}}">
+                    <view class="gifimage-wrapper">
+                        <image class="intro-image-gif" src="{{WEB_API.buyVideoUrl + 'program.gif'}}" mode="widthFix"></image>
+                        <image class="intro-image-gif intro-image-gif1" src="{{WEB_API.buyVideoUrl + 'code.gif'}}" mode="widthFix"></image>
+                    </view>
+                </block>
+                <image class="intro-image" src="{{WEB_API.buyImageUrl + (index.$original + 1 > 9 ? '' : '0') + (index.$original + 1) + '.png'}}" mode="widthFix"></image>
+            </view>
+            <guide classname="guide-wrapper--page" __triggerObserer="{{ _triggerObserer }}"></guide>
+        </view>
+        <view class="bottom-bar">
+            <block wx:if="{{!isBuy}}">
+                <view class="btn-consult" bindtap="handleConsultButtonClick">咨询</view>
+            </block>
+            <button class="{{isBuy ? 'btn-pay' : 'btn-pay btn-pay--short'}}" open-type="{{isRegister || isIOS ? '' : 'getUserInfo'}}" bindgetuserinfo="handleGetUserInfo" bindtap="handlePayButtonClick">
+                <block wx:if="{{!isBuy && !isIOS}}">
+                    <view>¥<text>98</text>/5次课 <text>立即报名</text>
+                    </view>
+                </block>
+                <block wx:if="{{!isBuy && isIOS}}">
+                    <view><text>立即报名</text>
+                    </view>
+                </block>
+                <block wx:if="{{isBuy}}"><text>查看我的报名信息</text>
+                </block>
+            </button>
+        </view>
+    </view>
+</block>

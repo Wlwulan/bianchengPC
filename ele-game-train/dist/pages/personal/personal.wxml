@@ -1,0 +1,70 @@
+<block>
+    <view class="personal">
+        <view class="header">
+            <view class="header-left">
+                <block wx:if="{{userInfo['isPurchase'] === 1}}">
+                    <image class="title-frame" mode="widthFix" src="https://appd.knowbox.cn/ss/miniapp/ele_game_register/title-frame.png"></image>
+                </block>
+                <image class="profile-picture" src="{{userInfo['headPhoto']}}"></image>
+            </view>
+            <view class="header-right">
+                <view class="msg-top"><text class="nick-name">{{userInfo['studentName']}}</text><text bindtap="toggleModel" class="isbuy" data-e-tap-so="this" data-e-tap-a-a="isbuyBtn">{{userInfo['isPurchase'] == 0 ? '加入训练营' : '训练营小创客'}}</text>
+                </view>
+                <view class="msg-bottom">
+                    <view class="progress-warp">
+                        <view class="progress"><text class="progress-bar" style="{{'width: ' + (userInfo['upgradeProgress'] && userInfo['upgradeProgress'] * 360) + 'rpx'}}"></text>
+                        </view>
+                        <view class="tips-warp" bindtap="toggleModel" data-e-tap-so="this" data-e-tap-a-a="tipsBtn">
+                            <image class="tips"></image>
+                        </view>
+                    </view>
+                    <view class="progress-txt"><text class="level">Lv.{{userInfo['abilityLevel']}}</text><text class="percent">{{anonymousState__temp}}%</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="myList">
+            <block wx:if="{{!(userInfo['isPurchase'] == 0 && i == 1)}}" wx:for="{{myList}}" wx:for-item="el" wx:for-index="i" wx:key="i">
+                <view class="li" bindtap="toDetailPage" data-e-tap-so="this" data-e-tap-a-a="{{i}}">
+                    <view class="img-warp">
+                        <image class="img" src="{{el['imgUrl']}}"></image>
+                    </view><text class="txt">{{el['name']}}</text>
+                    <view class="arrow"></view>
+                </view>
+            </block>
+        </view>
+        <modal-container isShow="{{isShowModel}}" __triggerObserer="{{ _triggerObserer }}">
+            <modal-container-service bindonclosemodal="toggleModel" __triggerObserer="{{ _triggerObserer }}" top="{{-160}}" __fn_onCloseModal="{{true}}" data-e-onclosemodal-so="this">
+                <block wx:if="{{clickSource === 'isbuyBtn'}}">
+                    <view><text class="title">温馨提示</text>
+                        <view class="toastTxt">加入小象编程训练营入门课程即可解锁<text>训练营小创客</text>称号哦～</view>
+                    </view>
+                </block>
+                <block wx:if="{{clickSource === 'tipsBtn'}}">
+                    <view><text class="title">积分说明</text>
+                        <view class="toastTxt score">
+                            <view>1.每获得1个点赞+1分</view>
+                            <view>2.每发布1个作品+2分</view>
+                            <view>3.每通过<text>小象编程APP</text>1个关卡+1分</view>
+                            <view>4.加入<text>小象编程训练营</text>+50分</view>
+                        </view>
+                    </view>
+                </block>
+                <block>
+                    <block wx:if="{{userInfo['isPurchase'] === 1}}">
+                        <view class="footerBtn">
+                            <button class="close" bindtap="toggleModel" data-e-tap-so="this">我知道了</button>
+                        </view>
+                    </block>
+                    <block wx:else>
+                        <view class="footerBtn">
+                            <button class="cancel" bindtap="toggleModel" data-e-tap-so="this">取消</button>
+                            <button class="toPay" bindtap="toPay">加入训练营</button>
+                        </view>
+                    </block>
+                </block>
+            </modal-container-service>
+        </modal-container>
+        <authorize isShow="{{showAuthorized}}" __triggerObserer="{{ _triggerObserer }}" bindonauthorize="authorizeCallBack" __fn_onAuthorize="{{true}}" data-e-onauthorize-so="this"></authorize>
+    </view>
+</block>

@@ -1,0 +1,128 @@
+.editProduct {
+    .title-1 {
+        display: inline-block;
+        font-size: 34rpx;
+        color: #333333;
+        margin-top: 93rpx;
+        margin-left: 55rpx;
+    }
+    .title-2 {
+        display: inline-block;
+        font-size: 34rpx;
+        color: #333333;
+        margin-top: 74rpx;
+        margin-left: 55rpx;
+    }
+    Input {
+        width: 678rpx;
+        height: 109rpx;
+        border-radius: 30rpx;
+        border: solid 3rpx #bfbfbf;
+        margin: 27rpx auto;
+        font-size: 30rpx;
+        color: #727786;
+        //text-indent: 40rpx;
+        box-sizing: border-box;
+        padding-left: 40rpx;
+    }
+    .edit-con {
+        width: 678rpx;
+        height: 419rpx;
+        border-radius: 30rpx;
+        border: solid 3rpx #bfbfbf;
+        margin: 27rpx auto;
+        box-sizing: border-box;
+        Textarea {
+            width: 678rpx;
+            height: 419rpx;
+            border-radius: 30rpx;
+            //border: solid 3rpx #bfbfbf;
+
+            color: #727786;
+            font-size: 30rpx;
+            padding-left: 40rpx;
+            box-sizing: border-box;
+            //line-height: 80rpx;
+            padding-top: 30rpx;
+
+        }
+        .edit-ctn-transparent {
+            color: transparent;
+            display: none;
+        }
+    }
+
+
+    .btn {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 102rpx;
+        font-size: 34rpx;
+        .btn-cancel,.btn-submit {
+            height: 100%;
+            display: inline-block;
+            width: 50%;
+            border: none;
+            border-radius: 0;
+        }
+        .btn-cancel::after,.btn-submit::after {
+            border: none;
+        }
+        .btn-cancel {
+            background: #ecf1fa;
+            color: #a0a4b1;
+        }
+        .btn-submit {
+            background: #7cb5ff;
+            color: #ffffff;
+        }
+    }
+    .modal-tit {
+        text-align: center;
+        font-family: PingFangSC-Semibold;
+        color: #56546c;
+        font-size: 40rpx;
+        height: 130rpx;
+        line-height: 130rpx;
+    }
+    .modal-con {
+        padding: 0 30rpx;
+        color: #9796a4;
+        font-size: 28rpx;
+        text-align: center;
+        height: 100rpx;
+        &>text {
+            color: red;
+        }
+    }
+    .modal-btn2 {
+        margin-top: 40rpx;
+        text-align: center;
+        height: 101rpx;
+        line-height: 101rpx;
+
+        background: #ffffff;
+        font-size: 32rpx;
+        .modal-btn2-left,.modal-btn2-right {
+            width: 50%;
+            float: left;
+            height: 101rpx;
+            border-radius: 0;
+        }
+        .modal-btn2-left::after,.modal-btn2-right::after {
+            border: none;
+        }
+        .modal-btn2-left {
+            color: #9796a4;
+            border-top: 1rpx solid #e4ebf0;
+        }
+        .modal-btn2-right {
+            color: #ffffff;
+            background: #85cdfb;
+            border-top: 1rpx solid #85cdfb;
+        }
+
+
+    }
+}

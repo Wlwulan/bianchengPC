@@ -1,0 +1,58 @@
+<block>
+    <view class="myProduct">
+        <view wx:key="i" class="li" bindtap="listMenu" wx:for="{{loopArray0}}" wx:for-item="el" wx:for-index="i" data-e-tap-so="this" data-e-tap-a-a="{{i}}">
+            <image class="{{el.$original.Showstate ? 'on-load' : 'under-load'}}"></image>
+            <image class="img" src="{{el.$original.Worksimage}}"></image>
+            <view class="msg">
+                <view class="msg-top"><text class="txt">{{el.$original.Worksname}}</text><text class="time">{{el.date}}</text>
+                </view>
+                <view class="msg-bottom">
+                    <image class="zan" src="https://appd.knowbox.cn/ss/miniapp/ele_game_register/like_red.png"></image><text class="time">{{el.$original.Praisecount}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="{{'getMore ' + (nothing ? 'nothing' : '')}}">{{footerText}}</view>
+        <block wx:if="{{isShowEditToast}}">
+            <view class="editToast">
+                <view class="blank" bindtap="cancel"></view>
+                <view class="select">
+                    <view class="menuList" wx:key="i" bindtap="select" wx:for="{{isPublished ? menuBtn2 : menuBtn1}}" wx:for-item="el" wx:for-index="i" data-e-tap-so="this" data-e-tap-a-a="{{el}}" data-e-tap-a-b="{{i}}">
+                        <image class="img" src="{{el.imgUrl}}"></image><text class="{{el.disabled ? 'published' : ''}}">{{el.txt}}</text>
+                    </view>
+                </view>
+                <view class="cancel" bindtap="cancel">取消</view>
+            </view>
+        </block>
+        <modal-container isShow="{{isShowModel}}" __triggerObserer="{{ _triggerObserer }}">
+            <modal-container-service bindonclosemodal="toggleModel" __triggerObserer="{{ _triggerObserer }}" top="{{-160}}" __fn_onCloseModal="{{true}}" data-e-onclosemodal-so="this">
+                <block wx:if="{{modalSwitch === 1}}">
+                    <view>
+                        <view class="modal-tit">温馨提示</view>
+                        <view class="modal-con">需要作品下架后操作</view>
+                        <view class="modal-btn" bindtap="toggleModel">我知道了</view>
+                    </view>
+                </block>
+                <block wx:if="{{modalSwitch === 2}}">
+                    <view>
+                        <view class="modal-tit">温馨提示</view>
+                        <view class="modal-con">是否确认下架作品？作品下架后将其他用户将不能再预览该作品</view>
+                        <view class="modal-btn2">
+                            <button class="modal-btn2-left" bindtap="toggleModel">取消</button>
+                            <button class="modal-btn2-right" bindtap="operateWork" data-e-tap-so="this" data-e-tap-a-a="{{0}}">确认</button>
+                        </view>
+                    </view>
+                </block>
+                <block wx:if="{{modalSwitch === 3}}">
+                    <view>
+                        <view class="modal-tit">温馨提示</view>
+                        <view class="modal-con">是否确认删除作品？</view>
+                        <view class="modal-btn2">
+                            <button class="modal-btn2-left" bindtap="toggleModel">取消</button>
+                            <button class="modal-btn2-right" bindtap="operateWork" data-e-tap-so="this" data-e-tap-a-a="{{2}}">确认</button>
+                        </view>
+                    </view>
+                </block>
+            </modal-container-service>
+        </modal-container>
+    </view>
+</block>

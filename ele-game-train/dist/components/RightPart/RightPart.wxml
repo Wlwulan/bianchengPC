@@ -1,0 +1,5 @@
+<block>
+    <view class="{{'flex-container-right ' + imageClass}}" style="{{'padding-left: ' + paddingLeft + 'rpx;'}}">
+        <slot></slot>
+    </view>
+</block>

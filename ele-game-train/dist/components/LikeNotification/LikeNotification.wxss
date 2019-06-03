@@ -1,0 +1,23 @@
+
+.text-middle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.name {
+  font-size: 30rpx;
+  color: #727786;
+}
+
+.time {
+  font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  line-height: 36rpx;
+  color: #b4b4b4;
+}

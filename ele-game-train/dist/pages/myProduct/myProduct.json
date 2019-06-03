@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "modal-container": "../../components/ModalContainers/ModalContainers",
+    "modal-container-service": "../../components/ModalContainerService/ModalContainerService"
+  },
+  "pages": [
+    "pages/myProduct/myProduct"
+  ],
+  "navigationBarTitleText": "我的作品",
+  "onReachBottomDistance": 50
+}

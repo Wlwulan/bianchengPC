@@ -1,0 +1,9 @@
+<block>
+    <view class="modal-wrapper">
+        <view class="modal-container modal-guide">
+            <view class="modal-btn-close" bindtap="closeModal"></view>
+            <view class="title">{{title}}</view>
+            <guide __triggerObserer="{{ _triggerObserer }}"></guide>
+        </view>
+    </view>
+</block>

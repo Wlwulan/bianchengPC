@@ -1,0 +1,5 @@
+<block>
+    <view class="modal-container" style="{{'top:' + top + 'rpx;'}}">
+        <slot></slot>
+    </view>
+</block>

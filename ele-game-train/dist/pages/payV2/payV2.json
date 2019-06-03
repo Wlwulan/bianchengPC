@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "modal-pay": "./components/modal-pay/modalPay",
+    "modal-guide": "./components/modal-guide/modalGuide",
+    "guide": "./components/guide/guide"
+  },
+  "pages": [
+    "pages/payV2/payV2"
+  ]
+}

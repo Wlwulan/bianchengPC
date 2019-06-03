@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "modal-container": "../../components/ModalContainers/ModalContainers",
+    "modal-container-service": "../../components/ModalContainerService/ModalContainerService"
+  },
+  "pages": [
+    "pages/editProduct/editProduct"
+  ],
+  "navigationBarTitleText": "修改作品信息"
+}

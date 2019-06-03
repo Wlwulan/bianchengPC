@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "left-right": "../LeftRight/LeftRight",
+    "left-part": "../LeftPart/LeftPart",
+    "right-part": "../RightPart/RightPart"
+  }
+}

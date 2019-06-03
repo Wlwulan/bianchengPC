@@ -1,0 +1,12 @@
+<block>
+    <view class="popup">
+        <block>
+            <block wx:if="{{!isCanvas}}">
+                <image src="{{imgUrl}}" bindtap="toPay"></image>
+            </block>
+            <block wx:else>
+                <canvas bindtap="toPay" style="width: 180rpx;height: 151rpx;" canvas-id="canvas" class="canvas"></canvas>
+            </block>
+        </block>
+    </view>
+</block>

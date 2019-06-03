@@ -1,0 +1,39 @@
+.hotWorks {
+    display: none;
+}
+.hot-work {
+    overflow: hidden;
+    .ranking {
+        display: block;
+        width: 82rpx;
+        height: 36rpx;
+        background-color: #c9c9c9; //ff6776
+        border-radius: 8rpx;
+        font-size: 24rpx;
+        color: #ffffff;
+        line-height: 36rpx;
+        text-align: center;
+        margin-top: 47rpx;
+        margin-left: 47rpx;
+
+    }   
+    .active-0{
+        background-color: #ff6776;
+    } 
+    .active-1{
+        background-color: #ff8854;
+    }
+    .active-2{
+        background-color: #ffbd5e;
+    }
+}
+.getMore {
+    text-align: center;
+    font-size: 28rpx;
+    color: #909090;
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.active {
+    display: block;
+}

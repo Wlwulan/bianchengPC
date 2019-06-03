@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "recommended-logos": "../../components/RecommendedLogos/RecommendedLogos",
+    "tab-bar": "../../components/TabBars/TabBars",
+    "hot-works": "../../components/HotWorks/HotWorks",
+    "new-works": "../../components/newWorks/newWorks",
+    "topnotch-players": "../../components/TopnotchPlayers/TopnotchPlayers",
+    "popupwindow": "../../components/popupwindow/popupwindow"
+  },
+  "navigationBarTitleText": "推荐作品",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "pageOrientation": "portrait"
+}

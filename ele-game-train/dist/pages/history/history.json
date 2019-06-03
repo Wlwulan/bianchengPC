@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "hot-work": "../../components/HotWork/HotWork"
+  },
+  "navigationBarTitleText": "浏览历史"
+}

@@ -1,0 +1,26 @@
+<block>
+    <view class="creatClass">
+        <view class="card" wx:key="i" bindtap="toggleClassModel" wx:for="{{cardCtn}}" wx:for-item="el" wx:for-index="i" data-e-tap-so="this" data-e-tap-a-a="{{i}}"><text>{{el['title']}}</text>
+            <image src="{{el['imgUrl']}}"></image>
+        </view>
+        <modal-container isShow="{{isShowClassModel}}" __triggerObserer="{{ _triggerObserer }}">
+            <modal-container-service bindonclosemodal="toggleClassModel" __triggerObserer="{{ _triggerObserer }}" top="{{-160}}" __fn_onCloseModal="{{true}}" data-e-onclosemodal-so="this"><text class="title">温馨提示</text>
+                <block wx:if="{{currTxtId === 0}}">
+                    <view class="toastTxt"><text>前往官网</text><text class="red">code.knowbox.cn</text><text>学习编程</text>
+                    </view>
+                </block>
+                <block wx:if="{{currTxtId === 1}}">
+                    <view class="toastTxt">
+                        <view><text>1.在浏览器输入</text><text class="red">code.knowbox.cn/ide</text>
+                        </view><text>2.创作完成后提交作品可在小程序中查看</text>
+                    </view>
+                </block>
+                <block wx:if="{{currTxtId === 2}}">
+                    <view class="toastTxt"><text>iOS用户请在AppStore/安卓用户请在应用商店搜索</text><text class="red" decode="{{true}}">“小象编程”</text><text>下载小象编程APP进行编程闯关实践</text>
+                    </view>
+                </block>
+                <button class="cancel" bindtap="toggleClassModel" data-e-tap-so="this">我知道了</button>
+            </modal-container-service>
+        </modal-container>
+    </view>
+</block>

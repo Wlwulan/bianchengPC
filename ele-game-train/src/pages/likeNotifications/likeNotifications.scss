@@ -1,0 +1,15 @@
+.like-notification {
+  padding: 43rpx 59rpx 43rpx 43rpx;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.look-early {
+  text-align: center;
+  padding: 26rpx;
+
+  &>text {
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #909090;
+  } 
+}

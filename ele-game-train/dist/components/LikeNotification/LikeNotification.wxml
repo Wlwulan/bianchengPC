@@ -1,0 +1,30 @@
+<block>
+    <view>
+        <view class="like-notification">
+            <left-right __triggerObserer="{{ _triggerObserer }}">
+                <view style="justify-content: space-between;">
+                    <left-part __triggerObserer="{{ _triggerObserer }}">
+                        <left-right __triggerObserer="{{ _triggerObserer }}">
+                            <view>
+                                <left-part __triggerObserer="{{ _triggerObserer }}">
+                                    <image style="width: 100rpx;border-radius: 100rpx;border: solid 4rpx rgba(225, 225, 225, 0.4);" mode="widthFix" src="{{src}}"></image>
+                                </left-part>
+                                <right-part paddingLeft="{{21}}" __triggerObserer="{{ _triggerObserer }}">
+                                    <view class="text-middle">
+                                        <view>
+                                            <view class="name">{{name}}</view>
+                                            <view class="time">{{time}}</view>
+                                        </view>
+                                    </view>
+                                </right-part>
+                            </view>
+                        </left-right>
+                    </left-part>
+                    <right-part paddingLeft="{{21}}" __triggerObserer="{{ _triggerObserer }}" isImage="{{true}}">
+                        <image style="width: 132rpx;" mode="widthFix" src="{{WorkImg}}"></image>
+                    </right-part>
+                </view>
+            </left-right>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,12 @@
+<block>
+    <view>
+        <view class="index">
+            <block wx:if="{{rankList}}">
+                <view class="hot-work" wx:key="i" wx:for="{{loopArray0}}" wx:for-item="el" wx:for-index="i">
+                    <hot-work userInfo="{{el.$loopState__temp2}}" __triggerObserer="{{ _triggerObserer }}" workImage="{{el.$original['workImage']}}" likeNum="{{el.$original['praiseCount']}}" time="{{el.$loopState__temp4}}" title="{{el.$original['workName']}}" workerId="{{el.$original['workId']}}"><text class="{{'ranking ' + ('active-' + i)}}">No.{{i + 1}}</text>
+                    </hot-work>
+                </view>
+            </block>
+        </view>
+    </view>
+</block>

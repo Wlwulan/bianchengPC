@@ -1,0 +1,10 @@
+<block>
+    <view>
+        <view class="index">
+            <view class="recommendedLogo" wx:key="i" wx:for="{{loopArray0}}" wx:for-item="el" wx:for-index="i">
+                <recommended-logo userInfo="{{el.$loopState__temp2}}" __triggerObserer="{{ _triggerObserer }}" poster="{{el.$original['Suggestworksinfo']['coverImg']}}" videoSrc="{{el.$original['Suggestworksinfo']['videoUrl']}}" likeNum="{{el.$original['Suggestworksinfo']['priceCount']}}" title="{{el.$original['Suggestworksinfo']['worksName']}}" curNumber="{{el.$loopState__temp4}}" workerId="{{el.$original['Suggestworksinfo']['worksId']}}"></recommended-logo>
+            </view>
+        </view>
+        <view class="getMore">{{getMoreTxt}}</view>
+    </view>
+</block>

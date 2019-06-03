@@ -1,0 +1,24 @@
+<block>
+    <block wx:if="{{!isRegister}}">
+        <view class="authorize-warp">
+            <view class="authorize">
+                <view class="title">小象编程训练营</view>
+                <view class="ctn-warp">
+                    <view class="ctn-warp-img">
+                        <image src="https://appd.knowbox.cn/ss/miniapp/ele_game_register/personal/medal_icon.png"></image>
+                    </view>
+                    <view class="ctn-warp-txt"><text>编程能力等级</text><text>记录你成长中的点点滴滴</text>
+                    </view>
+                </view>
+                <view class="ctn-warp">
+                    <view class="ctn-warp-img">
+                        <image src="https://appd.knowbox.cn/ss/miniapp/ele_game_register/personal/manage_icon.png"></image>
+                    </view>
+                    <view class="ctn-warp-txt"><text>管理自己的作品</text><text>回顾自己的每一次创意</text>
+                    </view>
+                </view>
+                <button class="authorize-btn" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">授权微信用户信息</button>
+            </view>
+        </view>
+    </block>
+</block>

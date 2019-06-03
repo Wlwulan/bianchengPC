@@ -1,0 +1,120 @@
+.wrapper {
+    padding: 50rpx 36rpx 0;
+}
+
+.choice-content {
+    margin-bottom: 60rpx;
+}
+
+.title {
+    font-size: 34rpx;
+    color: #575f73;
+    margin-bottom: 25rpx;
+}
+
+.choice-item {
+    $self: &;
+    height: 90rpx;
+    line-height: 90rpx;
+    background-color: #fff;
+    color: #99a4c4;
+    font-size: 30rpx;
+    border: 2rpx solid #cad3e6;
+    border-radius: 10rpx;
+    text-align: center;
+
+    &#{$self}--active {
+        background-color: #7cb5ff;
+        color: #fff;
+    }
+    &#{$self}--disabled {
+        background-color: #ecf1fa;
+        border-color: #e4e9f4;
+        color: #cad3e6;
+    }
+    &#{$self}--class {
+        width: 248rpx;
+        margin-right: 40rpx;
+        display: inline-block;
+    }
+    &#{$self}--time {
+        margin-bottom: 27rpx;
+    }
+}
+
+.input-cellphone {
+    $self: &;
+    font-size: 30rpx;
+    height: 76rpx;
+    padding: 5rpx 15rpx;
+    border-radius: 10rpx;
+    border: 2rpx solid #cad3e6;
+}
+.input-cellphone--placeholder {
+    color: #cad3e6;
+}
+
+.pay-btn {
+    height: 110rpx;
+    line-height: 110rpx;
+    background-color: #7cb5ff;
+    color: #fff;
+    font-size: 34rpx;
+    width: 100%;
+    border-radius: 0;
+    &::after {
+        border: none;
+    }
+}
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    .checkbox-wrap{
+        display:flex;
+        justify-content: center;
+        margin-bottom: 26rpx;
+        .checkbox-group {
+            display:flex;
+            align-items: center;
+            label {
+                font-size: 26rpx;
+                color: #cad3e6;
+                checkbox {        
+                    .wx-checkbox-input {
+                        width: 26rpx;
+                        height: 26rpx;
+                        border-radius: 26rpx;
+                    }
+                    .wx-checkbox-input.wx-checkbox-input-checked {
+                        width: 26rpx;
+                        height: 26rpx;  
+                        // background: #7cb5ff;             
+                    }
+                    .wx-checkbox-input.wx-checkbox-input-checked::before {
+                        width: 26rpx;
+                        height: 26rpx;
+                        line-height: 26rpx;
+                        text-align: center;
+                        font-size: 20rpx;
+                        color: #7cb5ff;
+                        background: transparent;
+                        transform: translate(-50%, -50%) scale(1);
+                        -webkit-transform: translate(-50%, -50%) scale(1);
+                    }
+                }
+            }
+        }        
+    }
+
+    Text {
+        align-self:center;
+        font-size: 26rpx;
+        color: #cad3e6;
+        margin-top: 8rpx;
+    }
+    .toProtocol {
+        border-bottom: 1rpx solid #cad3e6;
+    }
+}

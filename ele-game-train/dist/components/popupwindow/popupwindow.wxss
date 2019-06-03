@@ -1,0 +1,13 @@
+
+.popup .canvas {
+  position: absolute;
+  right: 0;
+  top: 277rpx;
+}
+.popup Image {
+  position: fixed;
+  right: 0;
+  top: 277rpx;
+  width: 180rpx;
+  height: 151rpx;
+}

@@ -1,0 +1,94 @@
+.index {
+    &-space1 {
+        margin-top: 220rpx;
+    }
+    &-space2 {
+        margin-top: 92rpx;
+    }
+    .header {
+        width: 100%;
+    }
+    .favour-notice {
+        z-index: 9;
+        width: 750rpx;
+        height: 128rpx;
+        background-color: #f3f6f9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-remind{
+            width: 298rpx;
+            height: 76rpx;
+            background-color: #ffffff;
+            border-radius: 10rpx;
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0;
+            left: 0;
+            image {
+                width: 55rpx;
+                height: 55rpx;
+                background-color: #f3f6f9;
+                margin-left: 9rpx;
+                margin-right: 19rpx;
+                }
+            text{
+                font-family: PingFangSC-Regular;
+                font-size: 24rpx;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 36rpx;
+                letter-spacing: 0px;
+                color: #333333;
+                }
+            .right{
+                width:20rpx;
+                height:20rpx;
+                position:absolute;
+                right:40rpx;
+                top:28rpx;
+            }
+            .right-arrow1,.right-arrow2{
+                width:0;
+                height:0;
+                display:block;
+                position:absolute;
+                left:0;
+                top:0;
+                border-top:10rpx transparent dashed;
+                border-right:10rpx transparent dashed;
+                border-bottom:10rpx transparent dashed;
+                border-left:10rpx white solid;
+                overflow:hidden;
+            }
+            .right-arrow1{
+                left:1rpx;/*重要*/
+                border-left:10rpx #333333 solid;
+            }
+            .right-arrow2{
+                border-left:10rpx white solid;
+            }
+            }
+        }
+        .getMore {
+            text-align: center;
+            font-size: 28rpx;
+            color: #909090;
+            height: 80rpx;
+            line-height: 80rpx;
+        }
+        .fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99;
+        }
+    }
+.hideFavor {
+    top: 0rpx;
+}
+        
+        
+        
+

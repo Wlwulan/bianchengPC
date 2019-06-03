@@ -1,0 +1,16 @@
+<block>
+    <view class="index">
+        <block wx:if="{{unreadList}}">
+            <view class="like-notification" wx:key="i" wx:for="{{loopArray0}}" wx:for-item="el" wx:for-index="i">
+                <like-notification src="{{el.$original['HeadPhoto']}}" __triggerObserer="{{ _triggerObserer }}" name="{{el.$original['StudentName']}}" time="{{el.$loopState__temp2}}" WorkImg="{{el.$original['WorkImg']}}"></like-notification>
+            </view>
+        </block>
+        <view class="like-notification" wx:key="i" wx:for="{{loopArray1}}" wx:for-item="el" wx:for-index="i">
+            <like-notification src="{{el.$original['HeadPhoto']}}" __triggerObserer="{{ _triggerObserer }}" name="{{el.$original['StudentName']}}" time="{{el.$loopState__temp4}}" WorkImg="{{el.$original['WorkImg']}}"></like-notification>
+        </view>
+        <block wx:if="{{unreadOver}}">
+            <view class="look-early"><text bindtap="getPraiseList">{{footerText}}</text>
+            </view>
+        </block>
+    </view>
+</block>

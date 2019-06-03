@@ -1,0 +1,19 @@
+
+.look-early {
+  text-align: center;
+  padding: 26rpx;
+}
+.look-early > text {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #909090;
+}
+
+.nothing {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}

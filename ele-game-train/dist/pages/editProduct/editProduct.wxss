@@ -1,0 +1,120 @@
+
+.editProduct .title-1 {
+  display: inline-block;
+  font-size: 34rpx;
+  color: #333333;
+  margin-top: 93rpx;
+  margin-left: 55rpx;
+}
+.editProduct .title-2 {
+  display: inline-block;
+  font-size: 34rpx;
+  color: #333333;
+  margin-top: 74rpx;
+  margin-left: 55rpx;
+}
+.editProduct Input {
+  width: 678rpx;
+  height: 109rpx;
+  border-radius: 30rpx;
+  border: solid 3rpx #bfbfbf;
+  margin: 27rpx auto;
+  font-size: 30rpx;
+  color: #727786;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 40rpx;
+}
+.editProduct .edit-con {
+  width: 678rpx;
+  height: 419rpx;
+  border-radius: 30rpx;
+  border: solid 3rpx #bfbfbf;
+  margin: 27rpx auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.editProduct .edit-con Textarea {
+  width: 678rpx;
+  height: 419rpx;
+  border-radius: 30rpx;
+  color: #727786;
+  font-size: 30rpx;
+  padding-left: 40rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 30rpx;
+}
+.editProduct .edit-con .edit-ctn-transparent {
+  color: transparent;
+  display: none;
+}
+.editProduct .btn {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 102rpx;
+  font-size: 34rpx;
+}
+.editProduct .btn .btn-cancel, .editProduct .btn .btn-submit {
+  height: 100%;
+  display: inline-block;
+  width: 50%;
+  border: none;
+  border-radius: 0;
+}
+.editProduct .btn .btn-cancel::after, .editProduct .btn .btn-submit::after {
+  border: none;
+}
+.editProduct .btn .btn-cancel {
+  background: #ecf1fa;
+  color: #a0a4b1;
+}
+.editProduct .btn .btn-submit {
+  background: #7cb5ff;
+  color: #ffffff;
+}
+.editProduct .modal-tit {
+  text-align: center;
+  font-family: PingFangSC-Semibold;
+  color: #56546c;
+  font-size: 40rpx;
+  height: 130rpx;
+  line-height: 130rpx;
+}
+.editProduct .modal-con {
+  padding: 0 30rpx;
+  color: #9796a4;
+  font-size: 28rpx;
+  text-align: center;
+  height: 100rpx;
+}
+.editProduct .modal-con > text {
+  color: red;
+}
+.editProduct .modal-btn2 {
+  margin-top: 40rpx;
+  text-align: center;
+  height: 101rpx;
+  line-height: 101rpx;
+  background: #ffffff;
+  font-size: 32rpx;
+}
+.editProduct .modal-btn2 .modal-btn2-left, .editProduct .modal-btn2 .modal-btn2-right {
+  width: 50%;
+  float: left;
+  height: 101rpx;
+  border-radius: 0;
+}
+.editProduct .modal-btn2 .modal-btn2-left::after, .editProduct .modal-btn2 .modal-btn2-right::after {
+  border: none;
+}
+.editProduct .modal-btn2 .modal-btn2-left {
+  color: #9796a4;
+  border-top: 1rpx solid #e4ebf0;
+}
+.editProduct .modal-btn2 .modal-btn2-right {
+  color: #ffffff;
+  background: #85cdfb;
+  border-top: 1rpx solid #85cdfb;
+}

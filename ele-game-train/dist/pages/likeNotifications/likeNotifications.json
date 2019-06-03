@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "like-notification": "../../components/LikeNotification/LikeNotification"
+  },
+  "navigationBarTitleText": "点赞通知"
+}

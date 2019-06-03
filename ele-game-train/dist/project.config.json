@@ -1,0 +1,15 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "%E5%B0%8F%E8%B1%A1%E7%BC%96%E7%A8%8B%E8%AE%AD%E7%BB%83%E8%90%A5",
+  "description": "小象编程训练营",
+  "appid": "wx543b1c372161fcab",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false,
+    "newFeature": true
+  },
+  "compileType": "miniprogram",
+  "condition": {}
+}

@@ -1,0 +1,119 @@
+
+.TopnotchPlayers .li {
+  width: 100%;
+  height: 183rpx;
+  border-bottom: 1rpx solid #ebebeb;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.TopnotchPlayers .li .img-warp {
+  position: relative;
+  width: 120rpx;
+  height: 115rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 53rpx;
+  margin-right: 45rpx;
+}
+.TopnotchPlayers .li .img-warp .title-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120rpx;
+  height: 115rpx;
+}
+.TopnotchPlayers .li .img-warp .img {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  background-color: #4455b3;
+  border: solid 4rpx rgba(225, 225, 225, 0.4);
+}
+.TopnotchPlayers .li .msg {
+  height: 73rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.TopnotchPlayers .li .msg .msg-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.TopnotchPlayers .li .msg .msg-top .txt {
+  font-size: 30rpx;
+  line-height: 30rpx;
+  color: #727786;
+  margin-right: 22rpx;
+}
+.TopnotchPlayers .li .msg .msg-top .time {
+  font-size: 24rpx;
+  line-height: 24rpx;
+  height: 24rpx;
+  color: #f79904;
+}
+.TopnotchPlayers .li .msg .msg-bottom {
+  height: 27rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.TopnotchPlayers .li .msg .msg-bottom .zan {
+  width: 28rpx;
+  height: 27rpx;
+  margin-right: 6rpx;
+}
+.TopnotchPlayers .li .msg .msg-bottom .time {
+  font-size: 22rpx;
+  line-height: 22rpx;
+  height: 20rpx;
+  color: #b4b4b4;
+}
+.TopnotchPlayers .getMore {
+  text-align: center;
+  font-size: 28rpx;
+  color: #909090;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.active {
+  display: block;
+}
